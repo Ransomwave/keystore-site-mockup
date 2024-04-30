@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Alexandru Tudor, Yassin Ait Yetto" />
+    <!--<link rel="stylesheet" href="style.css" />-->
+    <link rel="stylesheet" href="./styles/index.css" />
+
+    <link rel="stylesheet" href="./navbar.css" />
+    <title>KeyStore - The Keyboard Shop</title>
+  </head>
+  <body>
+    <header>
+      <div class="topnav">
+        <a href="./"
+          ><h1>Key<span style="color: #bb86fc">Store</span></h1></a
+        >
+        <section>
+          <section>
+            <a class="activo" href="../">Home</a>
+            <a href="./ayuda">Que teclado es para mi?</a>
+            <a href="./contact">Contactenos</a>
+            <a href="./login">Log In</a>
+          </section>
+        </section>
+      </div>
+    </header>
+
+    <div class="content">
+      <h1>
+        <q>Teclados... <span style="color: #bb86fc">De otro mundo.</span></q>
+      </h1>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <a href="./Productos/teclado1.html">
+            <img
+              class="contenedor_imagen"
+              src="https://ae01.alicdn.com/kf/Sa8ba6f9e96804b9e9938e49fd8900e46k/EPOMAKER-Teclado-mec-nico-EK68-ISO-accesorio-con-dise-o-65-bot-n-de-intercambio-en.png"
+              alt="EPOMAKER EK68"
+              style="width: 100%"
+            />
+          </a>
+
+          <div class="text">EPOMAKER EK68</div>
+          <div class="subtext">Haz click en el teclado para mas.</div>
+        </div>
+
+        <div class="mySlides fade">
+          <a href="./Productos/teclado2.html">
+            <img
+              class="contenedor_imagen"
+              src="https://getechstore.com/cdn/shop/products/H145eab7cb17a4855a02b9c074d9cc895h_1024x.png?v=1705610248"
+              alt="KPREPUBLIC sk64"
+              style="width: 100%"
+          /></a>
+          <div class="text">KPREPUBLIC sk64</div>
+          <div class="subtext">Haz click en el teclado para mas.</div>
+        </div>
+
+        <div class="mySlides fade">
+          <a href="./Productos/teclado3.html">
+            <img
+              class="contenedor_imagen"
+              src="https://epomaker.de/cdn/shop/products/IMG_0548_7cdedb09-765b-48f1-aac8-6edbf51059ed.png?v=1706600844"
+              alt="EPOMAKER x LEOBOG Hi75"
+              style="width: 100%"
+          /></a>
+          <div class="text">EPOMAKER x LEOBOG Hi75</div>
+          <div class="subtext">Haz click en el teclado para mas.</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <!-- The dots/circles -->
+
+    <script src="./scripts/slide.js"></script>
+  </body>
+</html>

@@ -1,0 +1,176 @@
+/* Add a black background color to the top navigation */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  background: #121212;
+  /*animation: bg 5s infinite;*/
+  color: white;
+}
+
+@keyframes bg {
+  0% {
+    background: #262625;
+  }
+
+  50% {
+    background: #353534;
+  }
+  100% {
+    background: #121212;
+  }
+}
+
+.content {
+  margin: auto;
+  height: 100px;
+  width: 80%;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.content > h1:first-child {
+  font-size: 60px;
+  padding-top: 30px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  object-fit: cover;
+  object-position: center;
+  height: 60vh;
+
+  margin-bottom: 20px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0px 0px 100px rgba(255, 255, 255, 0.105);
+  position: relative;
+
+  margin: auto;
+  animation: mymove 2s infinite;
+}
+
+@keyframes mymove {
+  50% {
+    box-shadow: 0px 0px 200px rgba(255, 255, 255, 0.105);
+  }
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.5s ease-in-out;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  font-family: "Kanit", sans-serif;
+  color: #f2f2f2;
+  font-size: 23px;
+
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.subtext {
+  font-family: "Kanit", sans-serif;
+  /* color: #f2f2f2; */
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 23px;
+
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+  font-style: italic;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  border: none;
+  background-color: white;
+  animation: activo 1.5s infinite;
+}
+
+@keyframes activo {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.1;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}

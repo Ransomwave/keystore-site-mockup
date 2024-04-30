@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../navbar.css" />
+    <link rel="stylesheet" href="./signup-style.css" />
+    <title>Sign Up - KeyStore</title>
+  </head>
+  <body>
+    <header>
+      <div class="topnav">
+        <a href="../"
+          ><h1>Key<span style="color: #bb86fc">Store</span></h1></a
+        >
+        <section>
+          <section>
+            <a class="activo" href="../">Home</a>
+            <a href="../ayuda">Que teclado es para mi?</a>
+            <a href="../contact">Contactenos</a>
+            <a href="../login">Log In</a>
+          </section>
+        </section>
+      </div>
+    </header>
+
+    <div class="loginbox">
+      <form action="../login/login.php" method="post">
+        <div>
+          <h1>REGISTRARSE</h1>
+
+          <!-- <label for="user">Nombre de usuario:</label> -->
+          <input
+            placeholder="Tu nombre"
+            type="text"
+            id="nombre"
+            name="nombre"
+          /><br />
+          <!-- <label for="pass">Contraseña:</label> -->
+          <input
+            placeholder="Tus apellidos"
+            type="text"
+            id="apellidos"
+            name="apellidos"
+          /><br />
+          <span style="display: flex; gap: 10px; align-items: center">
+            <label for="naixement">Tu fecha de nacimiento:</label>
+            <input type="date" name="naixement" id="naixement" />
+          </span>
+          <br />
+
+          <fieldset style="width: 50%">
+            <legend>Nivel academico</legend>
+            <label for="eso"
+              >ESO
+              <input type="radio" name="academico" id="eso" />
+            </label>
+            <br />
+            <label for="batx"
+              >BATX/Graus
+              <input type="radio" name="academico" id="batx" />
+            </label>
+            <br />
+            <label for="uni"
+              >Universitat
+              <input type="radio" name="academico" id="uni" />
+            </label>
+            <br />
+            <label for="otros"
+              >Otros...
+              <input type="radio" name="academico" id="otros" />
+            </label>
+            <br />
+          </fieldset>
+          <br />
+
+          <label for="intereses">¿Y tus intereses?</label>
+          <select name="intereses" id="intereses">
+            <option value="inter1">Teclados mecanicos</option>
+            <option value="inter2">Teclados de membrana</option>
+            <option value="inter3">Modding de teclados</option>
+            <option value="inter4">Teclados Custom</option>
+            <option value="inter5">Teclados DIY</option>
+          </select>
+          <br />
+          <label for="texto">Observaciones</label>
+          <textarea
+            name="texto"
+            id="texto"
+            cols="10"
+            rows="10"
+            maxlength="50"
+          ></textarea>
+          <br />
+          <input class="button" type="Submit" value="SUBMIT" />
+          <input type="reset" value="RESET" class="secondarybutton" />
+
+          <p>¿Tienes cuenta? <a href="../login">Entra ya.</a></p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

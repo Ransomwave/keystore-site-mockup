@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../navbar.css" />
+    <link rel="stylesheet" href="./login-style.css" />
+    <title>Login - KeyStore</title>
+  </head>
+  <body>
+    <header>
+      <div class="topnav">
+        <a href="../"
+          ><h1>Key<span style="color: #bb86fc">Store</span></h1></a
+        >
+        <section>
+          <section>
+            <a class="activo" href="../">Home</a>
+            <a href="../ayuda">Que teclado es para mi?</a>
+            <a href="../contact">Contactenos</a>
+            <a href="../login">Log In</a>
+          </section>
+        </section>
+      </div>
+    </header>
+
+    <div class="loginbox">
+      <form action="./login.php" method="post">
+        <div>
+          <h1>INICIA SESION</h1>
+
+          <!-- <label for="user">Nombre de usuario:</label> -->
+          <input
+            placeholder="Nombre de usuario"
+            type="text"
+            id="user"
+            name="username"
+          /><br />
+          <!-- <label for="pass">Contraseña:</label> -->
+          <input
+            placeholder="Contraseña"
+            type="password"
+            id="pass"
+            name="password"
+          /><br />
+
+          <label style="font-weight: 300" for="privacyAgree"
+            >Recuerdame
+            <input type="checkbox" name="privacyAgree" id="privacyAgree" />
+          </label>
+          <br />
+
+          <input class="button" type="Submit" value="SUBMIT" /> <br />
+          <p>¿No tienes cuenta? <a href="../signup">Crea una ya.</a></p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
